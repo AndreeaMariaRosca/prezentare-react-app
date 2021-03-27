@@ -1,0 +1,21 @@
+.mylittlebox {
+    /* border: 1px solid black; */
+    height: 200px;   
+}
+
+.flex-container {
+    display: flex;
+    height: 100px;
+}
+
+.flex-child {
+    flex: 1;
+    border: 1px solid black;
+    margin: 10px;   
+}
+
+.big-flex-child {
+    flex: 2;
+    border: 1px solid black;
+    margin: 10px;   
+}
