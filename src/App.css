@@ -2,8 +2,14 @@
   text-align: center;
   color: #8B6591;
   padding: 50px;
+  background-color: linear-gradient(#420842, #8B6591 );
+  
 }
-.App-firsth{
+
+#gradient{
+  background-color: linear-gradient(#420842, #8B6591 );
+}
+.App-firstheader{
   text-align: center;
   color: #58355E;
   padding: 15px;
@@ -34,3 +40,16 @@
   color: #61dafb;
 }
 
+#subtitle{
+  margin: 160px;
+  color: 'primary';
+}
+
+#another-subtitle{
+  margin: 450px;
+  color: 'primary';
+}
+
+#left-subtitle-text{
+  text-align: left;
+}

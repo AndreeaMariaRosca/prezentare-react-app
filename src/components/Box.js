@@ -10,8 +10,8 @@ import './Box.css'
 
 class Box extends React.Component {
     render() {
-        console.log(this.props);
-        console.log(this.props.children);
+       // console.log(this.props);
+       // console.log(this.props.children);
 
         const props = this.props; // { name: 'Andreea', children: 'Si mai smechera' }
 
@@ -26,6 +26,9 @@ class Box extends React.Component {
                     <div className="flex-child">1</div>
                     <div className="flex-child">2</div>
                     <div className="big-flex-child">3</div>
+                </div>
+                <div className="flex-child">
+                    {props.children}
                 </div>
             </div>
         )   

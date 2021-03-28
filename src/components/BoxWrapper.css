@@ -3,11 +3,6 @@
     height: 200px;   
 }
 
-.flex-container {
-    display: flex;
-    border:1px solid black;
-}
-
 .flex-child {
     flex: 1;
     margin: 10px;  
