@@ -34,7 +34,7 @@ export default function CustomizedTimeline() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="primary">
-            <SchoolIcon />
+            <SchoolIcon fontSize='large'/>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -55,7 +55,7 @@ export default function CustomizedTimeline() {
          </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="primary" variant="outlined">
-            <LaptopMacIcon />
+            <LaptopMacIcon fontSize='large'/>
           </TimelineDot>
           <TimelineConnector className={classes.secondaryTail} />
         </TimelineSeparator>

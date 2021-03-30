@@ -3,10 +3,13 @@
     height: 200px;   
 }
 
+
 .flex-child {
     flex: 1;
     margin: 10px;  
     font-size: x-large; 
+    color: black;
+
 }
 
 .big-flex-child {

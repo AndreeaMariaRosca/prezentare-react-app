@@ -1,14 +1,20 @@
 .App {
   text-align: center;
   color: #8B6591;
-  padding: 50px;
-  background-color: linear-gradient(#420842, #8B6591 );
+  padding: 10px;
+  font-family: cursive;
   
+  font-size: xx-large;
 }
 
 #gradient{
   background-color: linear-gradient(#420842, #8B6591 );
 }
+
+#features{
+  position: relative;
+}
+
 .App-firstheader{
   text-align: center;
   color: #58355E;
@@ -52,4 +58,8 @@
 
 #left-subtitle-text{
   text-align: left;
+}
+
+.Icon{
+  text-align: 'left';
 }
