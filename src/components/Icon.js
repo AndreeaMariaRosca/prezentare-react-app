@@ -9,8 +9,7 @@ class Icon extends React.Component {
         return(
             <div>
                 <FontAwesomeIcon icon={props.icon} size={props.size}></FontAwesomeIcon>
-                    {props.children} 
-                <FontAwesomeIcon/>      
+                {props.children} 
             </div>
 
         )   

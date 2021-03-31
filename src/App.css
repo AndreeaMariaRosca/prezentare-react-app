@@ -7,8 +7,8 @@
   font-size: xx-large;
 }
 
-#gradient{
-  background-color: linear-gradient(#420842, #8B6591 );
+body {
+  background: -webkit-linear-gradient(#8851d1, #ffffff);
 }
 
 #features{
@@ -46,18 +46,11 @@
   color: #61dafb;
 }
 
-#subtitle{
-  margin: 160px;
+#subtitle {
+  margin: 20px;
   color: 'primary';
-}
-
-#another-subtitle{
-  margin: 450px;
-  color: 'primary';
-}
-
-#left-subtitle-text{
-  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .Icon{

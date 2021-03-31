@@ -29,7 +29,7 @@ export default function CustomizedTimeline() {
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary">
-            2016-2019
+            2019-prezent
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -41,16 +41,16 @@ export default function CustomizedTimeline() {
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              Colegiul National "Nicolae Grigorescu", Campina
+              Academia de Studii Economice, Bucuresti           
             </Typography>
-            <Typography>Matematica-Informatica, intensiv Informatica</Typography>
+            <Typography>Informatica Economica</Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
          <TimelineOppositeContent>
             <Typography variant="body2" color="textSecondary">
-             2019-present
+             2016-2019
             </Typography>
          </TimelineOppositeContent>
         <TimelineSeparator>
@@ -62,9 +62,9 @@ export default function CustomizedTimeline() {
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              Academia de Studii Economice, Bucuresti
+            Colegiul National "Nicolae Grigorescu", Campina            
             </Typography>
-            <Typography>Informatica Economica</Typography>
+            <Typography>Matematica Informatica, intensiv Informatica</Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>

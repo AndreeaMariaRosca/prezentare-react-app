@@ -5,11 +5,9 @@
 
 
 .flex-child {
-    flex: 1;
-    margin: 10px;  
+    flex: 1;  
     font-size: x-large; 
     color: black;
-
 }
 
 .big-flex-child {

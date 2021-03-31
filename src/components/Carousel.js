@@ -13,23 +13,22 @@ class Carousel extends React.Component {
         const color = "primary";
         return(
             <div style={{ position: 'relative', width: '100%', height: 500 }}>
-            <Button onClick={() => this.setState({ open: true }) } variant="contained" color={color} disableRipple ={true} size="large">Click to open</Button>
+            <Button onClick={() => this.setState({ open: true }) } variant="contained" color={color} disableRipple ={true} size="large">Galerie foto</Button>
             <AutoRotatingCarousel
-              label='Get started'
               open={this.state.open}
               onClose={() => this.setState({ open: false })}
               onStart={() => this.setState({ open: false })}
               style={{ position: 'absolute' }}
             >
               <Slide
-                media={<img src='static/images/SiSC1.jpg' alt = "ceva" />}
+                media={<img src='https://bit.ly/2PHNsAU'/>}
                 mediaBackgroundStyle={{ backgroundColor: red[400] }}
                 style={{ backgroundColor: red[600] }}
                 title='This is a very cool feature'
                 subtitle='Just using this will blow your mind.'
               />
               <Slide
-                media={<img src='http://www.icons101.com/icon_png/size_256/id_80975/GoogleInbox.png' />}
+                media={<img src='static/images/portret.jpg' />}
                 mediaBackgroundStyle={{ backgroundColor: blue[400] }}
                 style={{ backgroundColor: blue[600] }}
                 title='Ever wanted to be popular?'
