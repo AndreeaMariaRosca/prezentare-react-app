@@ -23,9 +23,10 @@ export default function Title() {
            
                 <div>
                     <Typography variant="h2">Andreea-Maria Rosca</Typography>
-                    <Typography variant="h5">Studenta</Typography>
+                    <Typography variant="h4">Studenta</Typography>
                 </div>
             </Paper>
-        </div>
+            <div style={{height: 80 }}/>
+        </div >
     );
   }

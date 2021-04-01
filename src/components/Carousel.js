@@ -12,7 +12,7 @@ class Carousel extends React.Component {
         const Button = require('@material-ui/core/Button').default;
         const color = "primary";
         return(
-            <div style={{ position: 'relative', width: '100%', height: 500 }}>
+            <div style={{ position: 'relative', width: '100%', height: 200 }}>
             <Button onClick={() => this.setState({ open: true }) } variant="contained" color={color} disableRipple ={true} size="large">Galerie foto</Button>
             <AutoRotatingCarousel
               open={this.state.open}

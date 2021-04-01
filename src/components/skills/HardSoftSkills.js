@@ -62,11 +62,11 @@ export default function HardSoftSkills() {
                         </Icon>
                     </BoxWrapper>
                     <BoxWrapper>
-                        <Icon icon={faYinYang} size="2x">
-                            <p>ceva</p>
+                        <Icon icon={faHandshake} size="2x">
+                            <p>Lucru in echipa</p>
                         </Icon>
-                        <Icon icon={faYinYang} size="2x">
-                            <p>altceva</p>
+                        <Icon icon={faPhoneSquare} size="2x">
+                            <p>Comunicare</p>
                         </Icon>
                     </BoxWrapper>
                 </BoxContainer>
@@ -74,6 +74,7 @@ export default function HardSoftSkills() {
             {/* <Divider orientation="vertical" flexItem /> */}
 
         </Grid>
+        <div style={{height: 100 }}/>
         </div>
     );
 } 

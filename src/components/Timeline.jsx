@@ -68,7 +68,7 @@ export default function CustomizedTimeline() {
             <Typography variant="h6" component="h1" align="center">
               Academia de Studii Economice, Bucuresti           
             </Typography>
-            <Typography>Informatica Economica</Typography>
+            <Typography align="center">Informatica Economica</Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -89,7 +89,7 @@ export default function CustomizedTimeline() {
             <Typography variant="h6" component="h1" align="center">
             Asociatia Studenților Crestin-Ortodocsi Romani           
             </Typography>
-            <Typography>Departamentul Human Resources</Typography>
+            <Typography align="center">Departamentul Human Resources</Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -110,7 +110,7 @@ export default function CustomizedTimeline() {
             <Typography variant="h6" component="h1" align="center">
             Colegiul National "Nicolae Grigorescu", Campina             
             </Typography>
-            <Typography>Matematica Informatica, intensiv Informatica</Typography>
+            <Typography align="center">Matematica Informatica, intensiv Informatica</Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>
