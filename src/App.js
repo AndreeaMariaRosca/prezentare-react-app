@@ -6,12 +6,15 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { faCalendarCheck, faYinYang, faPhoneSquare, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { makeStyles } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import Divider from "@material-ui/core/Divider";
+
 
 import Icon from './components/Icon';
 import LanguageSkills from './components/skills/LanguageSkills';
 import Title from './components/Title';
-import SoftSkills from './components/skills/SoftSkills';
-import HardSkills from './components/skills/HardSkills';
+import SubtitleSkills from './components/skills/SubtitleSkills';
+import HardSoftSkills from './components/skills/HardSoftSkills';
 import User from "./components/User";
 import JokeOfTheDay from './components/JokeOfTheDay';
 import BoxContainer from './components/BoxContainer';
@@ -27,6 +30,12 @@ const App = () => {
   });
   const classes = useStyles();
 
+  const theme = createMuiTheme({
+    typography: {
+      // Tell Material-UI what the font-size on the html element is.
+      htmlFontSize: 20,
+    },
+  });
   return (
 
     <div className="App">
@@ -38,36 +47,49 @@ const App = () => {
 
       <BoxContainer>
         <BoxWrapper>
-          <Typography align='center'>
+        {/* <ThemeProvider theme={theme}> */}
+           {/* <Typography align='center'>  */}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </Typography>
+           {/* </Typography> */}
+          {/* </ThemeProvider> */}
         </BoxWrapper>
         <BoxWrapper>
-          <img src="static/images/portret.jpg" alt="eu" width="300"/>
+          <img src="static/images/portret.jpg" alt="eu" width="250" style={{margin:"0px 50px"}}/>
         </BoxWrapper>
       </BoxContainer>
       
-      <Typography  id='subtitle' variant= 'h3' align='left'>Educatie</Typography>
-
+      {/* <Typography  id='subtitle' variant= 'h3' align='left'>Educatie si experienta</Typography> */}
+      <ThemeProvider theme={theme}>
+      <Typography  id='subtitle' variant= 'h3' align='left'>Educatie si experienta</Typography>
+      </ThemeProvider>
       <CustomizedTimeline />
 
       <Typography  id='subtitle' variant= 'h3' align='left'>Voluntariat</Typography>
       
+      {/* <BoxWrapper>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </BoxWrapper> */}
+
+      <BoxContainer>
+        <BoxWrapper>
+          {/* <Typography align='center'> */}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          {/* </Typography> */}
+        </BoxWrapper>
+        <BoxWrapper>
+          <img src="static/images/volunteering.jpg" alt="eu" width="450"/>
+        </BoxWrapper>
+      </BoxContainer>
+      <Carousel/>
+
+      <Typography  id='subtitle' variant= 'h3' align='left'>Hard&Soft Skills</Typography>
       <BoxWrapper>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </BoxWrapper>
 
-      <Carousel/>
-
-      {/* <CustomizedProgressBars/> */}
-      <Typography  id='subtitle' variant= 'h3' align='left'>Hard&Soft Skills</Typography>
-      <SoftSkills />
-      <HardSkills />
-
-
-      <BoxWrapper >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </BoxWrapper>
+      <SubtitleSkills />
+      <Divider variant="middle" />
+      <HardSoftSkills/>
 
       <Typography gutterBottom={true} paragraph={true}  id='subtitle'  variant= 'h3' align='left'>Contact</Typography>
       
@@ -92,8 +114,8 @@ const App = () => {
           </p>
         </BoxWrapper>
       </BoxContainer>
-    
-      <User/>
+      <Divider variant="middle" />
+
       <JokeOfTheDay/>
     </div>
   );

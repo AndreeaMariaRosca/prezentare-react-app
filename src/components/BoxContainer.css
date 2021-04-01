@@ -6,5 +6,5 @@
 
 .flex-container {
     display: flex; 
-    caption-side: bottom;
+    /* caption-side: bottom; */
 }

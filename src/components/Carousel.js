@@ -8,7 +8,7 @@ class Carousel extends React.Component {
         this.state = {}
     }
     render() {
-        const { red, blue, green } = require('@material-ui/core/colors');
+        const { red, blue, green, yellow, purple} = require('@material-ui/core/colors');
         const Button = require('@material-ui/core/Button').default;
         const color = "primary";
         return(
@@ -21,25 +21,32 @@ class Carousel extends React.Component {
               style={{ position: 'absolute' }}
             >
               <Slide
-                media={<img src='https://bit.ly/2PHNsAU'/>}
-                mediaBackgroundStyle={{ backgroundColor: red[400] }}
-                style={{ backgroundColor: red[600] }}
-                title='This is a very cool feature'
-                subtitle='Just using this will blow your mind.'
-              />
-              <Slide
-                media={<img src='static/images/portret.jpg' />}
+                media={<img src='static/images/SiSC1.jpeg'/>}
                 mediaBackgroundStyle={{ backgroundColor: blue[400] }}
-                style={{ backgroundColor: blue[600] }}
-                title='Ever wanted to be popular?'
-                subtitle='Well just mix two colors and your are good to go!'
+                style={{ backgroundColor: blue[500] }}
+                title='Training Adobe Illustrator'
+                subtitle='Departamentul de Imagine&Promovare'
               />
               <Slide
-                media={<img src='http://www.icons101.com/icon_png/size_256/id_76704/Google_Settings.png' />}
+                media={<img src='static/images/SiSC2.jpeg' />}
+                mediaBackgroundStyle={{ backgroundColor: purple[400] }}
+                style={{ backgroundColor: purple[500] }}
+                title='Training triere CV-uri'
+                subtitle='Tap That Job'
+              />
+              <Slide
+                media={<img src='static/images/SiSC3.jpeg' />}
+                mediaBackgroundStyle={{ backgroundColor: red[400] }}
+                style={{ backgroundColor: red[500] }}
+                title='Sedinta Serile Teatrului Studentesc'
+                subtitle='Departamentul de Imagine&Promovare'
+              />
+              <Slide
+                media={<img src='static/images/SiSC4.jpeg' />}
                 mediaBackgroundStyle={{ backgroundColor: green[400] }}
-                style={{ backgroundColor: green[600] }}
-                title='May the force be with you'
-                subtitle='The Force is a metaphysical and ubiquitous power in the Star Wars fictional universe.'
+                style={{ backgroundColor: green[500] }}
+                title='Iesiri informale'
+                subtitle='Marea familie I&P'
               />
             </AutoRotatingCarousel>
           </div>
