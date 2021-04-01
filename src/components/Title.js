@@ -22,7 +22,7 @@ export default function Title() {
             <Paper className={classes.myTitle} elevation={0}>
            
                 <div>
-                    <Typography variant="h2">Andreea-Maria Rosca</Typography>
+                    <Typography variant="h2">Andreea Rosca</Typography>
                     <Typography variant="h4">Studenta</Typography>
                 </div>
             </Paper>

@@ -32,7 +32,7 @@ const JokeOfTheDay = () => {
     <Divider variant="inset" component="li" />
     return (
         <div>
-            <Typography variant="h3">Joke of the day</Typography>
+            <Typography variant="h3" style={{fontWeight:"bold"}}>Joke of the day</Typography>
             <div>{joke.setup}</div>
             <div>{joke.punchline}</div>
         </div>

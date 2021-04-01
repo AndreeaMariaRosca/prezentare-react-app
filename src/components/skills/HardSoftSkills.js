@@ -71,7 +71,6 @@ export default function HardSoftSkills() {
                     </BoxWrapper>
                 </BoxContainer>
             </Grid>
-            {/* <Divider orientation="vertical" flexItem /> */}
 
         </Grid>
         <div style={{height: 100 }}/>

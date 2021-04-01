@@ -25,7 +25,6 @@ const App = () => {
 
   const theme = createMuiTheme({
     typography: {
-      // Tell Material-UI what the font-size on the html element is.
       htmlFontSize: 20,
     },
   });
@@ -40,18 +39,15 @@ const App = () => {
 
       <BoxContainer>
         <BoxWrapper>
-        {/* <ThemeProvider theme={theme}> */}
-           {/* <Typography align='center'>  */}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           {/* </Typography> */}
-          {/* </ThemeProvider> */}
+           <Typography variant= 'h3' align='center' style={{height: 100, fontSize:"large" }}>
+           Sunt o persoana deschisa si flexibila, pasionata de voluntariat. Reusesc sa-mi exprim ideile fluent, atat in limba romana, cat si in limba engleza, si reusesc sa ma adaptez rapid la conditiile de lucru. Imi place sa lucrez in echipa si sa cunosc persoane noi, cu ajutorul carora sa reusesc sa imi îmbunătățesc skill-urile si sa ma perfectionez.
+           </Typography>
         </BoxWrapper>
         <BoxWrapper>
-          <img src="static/images/portret.jpg" alt="eu" width="250" style={{margin:"0px 50px"}}/>
+          <img src="static/images/portret.jpg" alt="eu" width="200" style={{margin:"0px 50px"}}/>
         </BoxWrapper>
       </BoxContainer>
       
-      {/* <Typography  id='subtitle' variant= 'h3' align='left'>Educatie si experienta</Typography> */}
       <ThemeProvider theme={theme}>
       <Typography  id='subtitle' variant= 'h3' align='left'>Educatie si experienta</Typography>
       </ThemeProvider>
@@ -65,10 +61,7 @@ const App = () => {
 
       <BoxContainer>
         <BoxWrapper>
-          {/* <Typography align='center'> */}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          {/* </Typography> */}
-        </BoxWrapper>
+        Pentru mine, activitatile de voluntariat implica acei tineri care observa neajunsurile societatii si nu raman pasivi in fata lor. Ma bucur ca, in prezent, reusesc sa vin in ajutorul studentilor prin marea familie SiSC, in cadrul careia ma aflu membru activ al Departamentului de Imagine&Promovare, unde m-am implicat pentru realizarea implementarilor grafice, a animatiilor si a editarilor video pentru proiectele Tap That Job, SiSC Tutoring - editia de iarna si Serile Teatrului Studentesc.        </BoxWrapper>
         <BoxWrapper>
           <img src="static/images/volunteering.jpg" alt="eu" width="450"/>
         </BoxWrapper>
