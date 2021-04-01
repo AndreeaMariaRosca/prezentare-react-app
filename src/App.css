@@ -1,9 +1,12 @@
 .App {
   text-align: center;
   color: #8B6591;
-  padding: 10px;
   font-family: 'Roboto', sans-serif;  
   font-size: xx-large;
+}
+
+.body {
+  padding: 20px;
 }
 
 body {

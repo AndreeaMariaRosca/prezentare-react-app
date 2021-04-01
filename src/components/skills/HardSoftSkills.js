@@ -11,35 +11,28 @@ import BoxContainer from '../BoxContainer';
 import BoxWrapper from '../BoxWrapper'
 
 const useStyles = makeStyles({
-    mySkills:{
-        width: "max-width",
-        display: "flex",
-        direction: "column",
-        justifyContent: "center",
-        height: "110vh",
-    },
+    root: {
+        marginBottom: "50px",
+        marginTop: "20px"
+    }
 });
 
 export default function HardSoftSkills() {
     const classes = useStyles();
     return(
-        <div>
+        <div className={classes.root}>
              <Grid container>
-            <Grid item xs={12} sm={6} md={5}>
+                 <Grid item xs={12} sm={6} md={5}>
                     <BoxContainer>
                         <BoxWrapper>
                             <p>C/C++</p>
                             <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly />
-                            {/* <BoxWrapper> */}
                             <p>Javascript</p>
                             <Rating name="half-rating-read" defaultValue={3} precision={0.5} readOnly />
-                        {/* </BoxWrapper> */}
                         </BoxWrapper>
                      
 
                         <BoxWrapper>
-
-                            {/* <Typography variant="h4" align="left">Java</Typography> */}
                             <p>Java</p>
                             <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
                             <p>SQL</p>
@@ -73,7 +66,7 @@ export default function HardSoftSkills() {
             </Grid>
 
         </Grid>
-        <div style={{height: 100 }}/>
+        
         </div>
     );
 } 

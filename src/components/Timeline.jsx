@@ -75,7 +75,7 @@ export default function CustomizedTimeline() {
       <TimelineItem>
          <TimelineOppositeContent>
             <Typography variant="body2" color="textSecondary">
-             2019-(oct)2020
+             2019-2020
             </Typography>
          </TimelineOppositeContent>
         <TimelineSeparator>
@@ -137,14 +137,13 @@ export default function CustomizedTimeline() {
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary">
-            2000
+            24/07/2000
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="primary">
             <ChildFriendlyIcon fontSize='large'/>
           </TimelineDot>
-          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
